@@ -1,0 +1,18 @@
+<div class="col-md-4">
+  <table class="table table-stripped table-sm">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let country of countries">
+        <td>{{ country.id }}</td>
+        <td>{{ country.name }}</td>
+        <td><button class="btn btn-sm btn-danger" (click)="deleteCountry(country)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

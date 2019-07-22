@@ -1,0 +1,22 @@
+<div class="col-md-8">
+  <h2 class="text-center">Add Country</h2>
+  <form>
+    <div class="form-group">
+      <label for="idId">Id</label>
+      <input type="number" [(ngModel)]="country.id" name="id" class="form-control" id="idId">
+    </div>
+    <div class="form-group">
+      <label for="idName">Name</label>
+      <input type="text" [(ngModel)]="country.name" name="name" class="form-control" id="idName">
+    </div>
+    <div class="form-group">
+        <label for="idCapital">Capital</label>
+        <input type="text" [(ngModel)]="country.capital" name="capital" class="form-control" id="idCapital">
+      </div>
+      <div class="form-group">
+          <label for="idPopulation">Population</label>
+          <input type="text" [(ngModel)]="country.population" name="population" class="form-control" id="idPopulation">
+        </div>
+          <button class="btn btn-success" (click)="createCountry()">Create</button>
+  </form>
+</div>
